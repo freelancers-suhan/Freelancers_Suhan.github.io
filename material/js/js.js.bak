@@ -1,0 +1,29 @@
+
+let balance = parseInt(localStorage.getItem('balance')) || 0;
+
+function completeTask(reward, ) {
+   
+    if (localStorage.getItem() === 'true') {
+        alert('You have already completed this task.');
+        return;
+    }
+
+ 
+    balance += reward;
+    updateBalance();
+
+ 
+    localStorage.setItem(, 'true');
+
+ 
+    localStorage.setItem('balance', balance);
+
+
+    window.open(, '_blank');
+}
+
+function updateBalance() {
+    document.getElementById('balance').textContent = balance;
+}
+
+updateBalance();
